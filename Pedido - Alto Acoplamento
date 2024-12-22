@@ -1,0 +1,21 @@
+package acoplamento;
+
+public class PedidoA {
+    private double valor;
+
+    public PedidoA(double valor) {
+        this.valor = valor;
+    }
+
+    public void totaliza() {
+        System.out.println("Total: " + valor);
+    }
+}
+
+
+public class PrincipalE {
+    public static void main(String[] args) {
+        PedidoA p = new PedidoA(100.0);
+        p.totaliza();
+    }
+}
