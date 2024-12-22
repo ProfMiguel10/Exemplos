@@ -1,0 +1,17 @@
+package coesao;
+
+public class CalcE {
+    public int somar(int a, int b) {
+        return a + b;
+    }
+    public int modulo(int a, int b) {
+        return a %  b;
+    }
+    public String tirarEspaco(String txt) {
+        return txt.trim().toUpperCase();
+    }
+
+    public void imprimirTexto(String txt) {
+        System.out.println(txt);
+    }
+}
