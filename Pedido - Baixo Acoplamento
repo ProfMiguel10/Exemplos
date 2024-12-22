@@ -1,0 +1,27 @@
+package acoplamento;
+
+public class Pedido {
+	private double valor;
+
+	public Pedido(double valor) {
+		this.valor = valor;
+	}
+
+	public double calcDesconto(double desc) {
+		return valor * (desc / 100);
+	}
+}
+
+public class Totaliza {
+	public void totalizaPedido(Pedido p) {
+		System.out.println("Total: " + p.calcDesconto(30));
+	}
+}
+
+public class Principal {
+	public static void main(String[] args) {
+		Pedido p = new Pedido(100.0);
+		Totaliza t = new Totaliza();
+		t.totalizaPedido(p);
+	}
+}
